@@ -1,7 +1,10 @@
 package com.habuma.spitter.service.rmi;
 
-import com.habuma.spitter.domain.Spittle;
+import javax.jws.WebParam;
+import javax.jws.WebService;
 
+import com.habuma.spitter.domain.Spittle;
+@WebService
 public interface HelloService {
-	Spittle sayHello(String name);
+	Spittle sayHello(@WebParam(name="name") String name);
 }
