@@ -6,7 +6,7 @@
 
   <bean id="helloService" 
       class="org.springframework.remoting.caucho.HessianProxyFactoryBean"
-    p:serviceUrl="http://localhost:8080/hessian/hserv"
+    p:serviceUrl="http://localhost:8080/hessian/service/hserv"
     p:serviceInterface="com.habuma.spitter.service.rmi.HelloService" />      
 
 </beans>

@@ -20,7 +20,7 @@ public class App
     public static void main( String[] args ) throws MalformedURLException, RemoteException, NotBoundException
     {
     	ApplicationContext ctx = 
-		        new ClassPathXmlApplicationContext("hessian-client-context.xml");
+		        new ClassPathXmlApplicationContext("burlap-client-context.xml");
 		
         System.out.println( "Hello World!" );
         HelloService service=(HelloService) ctx.getBean("helloService");
